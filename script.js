@@ -17,7 +17,43 @@ generateBtn.addEventListener("click", writePassword);
 // const input = document.querySelector('input');
 // const up = document.querySelector('up');
 // let uppers = false;
+function generatePassword() {
+    var finalpassword = "hello";
 
+    var wordlength = prompt ("Password length. Please choose between 8 - 128 characters.");
+    console.log(wordlength)
+    
+    
+    
+    if (wordlength >= 8 && wordlength <= 128) {
+        console.log(wordlength)
+    } else {
+        alert("Please choose a length between 8 -128 characters.");
+        return; 
+    //     var wordlength = prompt ("Password length. Please choose between 8 - 128 characters.");
+    // console.log(choicelength)
+    }
+    
+    var uppers = confirm("Do you want Uppercase?")
+    var lowers= confirm("Do you want lowercase?")
+    var numbers = confirm("Do you want ?numbers")
+    var specials = confirm("Do you want special chars?")
+
+console.log (uppers,lowers,numbers,specials)
+
+
+
+
+  
+     if (confirm("Press a button")== true)  {
+        
+    } else {
+        
+    }
+
+
+    return finalpassword;
+}
 
 var lowercases = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"] 
 var uppercases = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
@@ -29,27 +65,9 @@ var specials
 var numb = false;
 var length = (10);
 var special = false;
-var wordlength = 
-
-var wordlength = prompt ("Password length. Please choose between 8 - 128 characters.");
-console.log(choicelength)
 
 
-let charlength;
-if (choicelength >= 8) (choicelength <= 128) {
-    length
-} else {
-    alert("Please choose a length between 8 -128 characters."),
-    var wordlength = prompt ("Password length. Please choose between 8 - 128 characters.");
-console.log(choicelength)
-}
 
-let uppers;
- if (confirm("Press a button")== true)  {
-    
-} else {
-    
-}
 
 // Input msg. Choose number of characters btwn 8-128 Input
 //  #> 8, <= 128 if false prompt, 
