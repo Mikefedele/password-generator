@@ -13,15 +13,62 @@ var generateBtn = document.querySelector("#generate");
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
+// const button = document.querySelector('button');
+// const input = document.querySelector('input');
+// const up = document.querySelector('up');
+// let uppers = false;
 
 
-var lowercase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"] 
-var uppercase = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-var number = ["1","2","3","4","5","6","7","8","9","0"]
-console.log(uppercase)
-console.log(lowercase)
-console.log(number)
+var lowercases = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"] 
+var uppercases = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+var numbers = ["1","2","3","4","5","6","7","8","9","0"]
+var specials
+// console.log(uppercase)
+// console.log(lowercase)
+// console.log(number)
+var numb = false;
+var length = (10);
+var special = false;
+var wordlength = 
 
+var wordlength = prompt ("Password length. Please choose between 8 - 128 characters.");
+console.log(choicelength)
+
+
+let charlength;
+if (choicelength >= 8) (choicelength <= 128) {
+    length
+} else {
+    alert("Please choose a length between 8 -128 characters."),
+    var wordlength = prompt ("Password length. Please choose between 8 - 128 characters.");
+console.log(choicelength)
+}
+
+let uppers;
+ if (confirm("Press a button")== true)  {
+    
+} else {
+    
+}
+
+// Input msg. Choose number of characters btwn 8-128 Input
+//  #> 8, <= 128 if false prompt, 
+// if true confirm upper, confirm lower, confirm number, confirm spcial
+// if all false prompt "must choose 1", restart sequence
+// if any true, concat all trues to single string
+// take at least 1 from each true
+// times (*) wordlength 
+// 
+
+
+
+
+// if (shelter.dogs.includes(chosenPet)) {
+//     dogMessage();
+//   } else if (shelter.cats.includes(chosenPet)) {
+//     catMessage();
+//   } else {
+//     console.log("It looks like the pet is not available.");  
 
 // Acceptance Criteria
 // GIVEN I need a new, secure password
